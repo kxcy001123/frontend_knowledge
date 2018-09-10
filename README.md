@@ -3,28 +3,8 @@
 #### 项目介绍
 工作学习中遇到的一些知识，问题，记录
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+##rem布局解析
+[https://juejin.im/post/5b90e07ce51d450e6a2dd140?utm_medium=fe&utm_source=weixinqun][https://juejin.im/post/5b90e07ce51d450e6a2dd140?utm_medium=fe&utm_source=weixinqun]
 
 
 #### 码云特技
