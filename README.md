@@ -9,6 +9,10 @@
     4. 阿里云部署node  https://help.aliyun.com/document_detail/50775.html
     5. 阿里云 nginx服务器   https://blog.csdn.net/chichengit/article/details/80807354（失败）
        (https://www.cnblogs.com/123cn/p/5752141.html)  成功
+##### Nginx  相关
+    1. nginx -t  检测配置文件语法错误，同时会显示主配置文件路径
+       .default 这是备份文件，不起作用，很多项目都是这样
+    2. nginx.conf  配置详细解释
 ##### 
     Vue生命周期   https://mp.weixin.qq.com/s/4ukhHAcMQN07y0ssYqUeuA
     React 16+生命周期   https://mp.weixin.qq.com/s/Lp-pXHdg48d-TV0QsJOcwA
