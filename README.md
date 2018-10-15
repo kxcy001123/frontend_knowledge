@@ -12,7 +12,7 @@
 ##### Nginx  相关
     1. nginx -t  检测配置文件语法错误，同时会显示主配置文件路径
        .default 这是备份文件，不起作用，很多项目都是这样
-    2. nginx.conf  配置详细解释
+    2. nginx.conf  配置详细解释  (https://www.cnblogs.com/liang-wei/p/5849771.html)
 ##### 
     Vue生命周期   https://mp.weixin.qq.com/s/4ukhHAcMQN07y0ssYqUeuA
     React 16+生命周期   https://mp.weixin.qq.com/s/Lp-pXHdg48d-TV0QsJOcwA
