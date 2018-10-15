@@ -6,7 +6,7 @@
     1. mobx 数组越界， js数组不存在越界，js的数组是hash表，如果找不到会返回undefined
     2. csrf 跨站请求伪造，防御:http请求头 referer
     3. vue商城  https://github.com/willemwei/goods
-
+    4. 阿里云部署node
 ##### 
     Vue生命周期   https://mp.weixin.qq.com/s/4ukhHAcMQN07y0ssYqUeuA
     React 16+生命周期   https://mp.weixin.qq.com/s/Lp-pXHdg48d-TV0QsJOcwA
