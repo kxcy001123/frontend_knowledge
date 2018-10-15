@@ -7,7 +7,8 @@
     2. csrf 跨站请求伪造，防御:http请求头 referer
     3. vue商城  https://github.com/willemwei/goods
     4. 阿里云部署node  https://help.aliyun.com/document_detail/50775.html
-    5. 阿里云 nginx服务器   https://blog.csdn.net/chichengit/article/details/80807354
+    5. 阿里云 nginx服务器   https://blog.csdn.net/chichengit/article/details/80807354（失败）
+       (https://www.cnblogs.com/123cn/p/5752141.html)  成功
 ##### 
     Vue生命周期   https://mp.weixin.qq.com/s/4ukhHAcMQN07y0ssYqUeuA
     React 16+生命周期   https://mp.weixin.qq.com/s/Lp-pXHdg48d-TV0QsJOcwA
