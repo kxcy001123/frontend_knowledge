@@ -9,6 +9,11 @@
     4. 阿里云部署node  https://help.aliyun.com/document_detail/50775.html
     5. 阿里云 nginx服务器   https://blog.csdn.net/chichengit/article/details/80807354（失败）
        (https://www.cnblogs.com/123cn/p/5752141.html)  成功
+    6. 一次跨域  options请求[options请求](http://www.xudihui.com/?p=285)
+        ```
+            同一个接口，在我这正常，在别人那404， 因为我这默认开启了浏览器跨域， 
+            在某些特定methods跨域时会先发送一个options请求， 会404.
+        ```
 ##### Nginx  相关
     1. nginx -t  检测配置文件语法错误，同时会显示主配置文件路径
        .default 这是备份文件，不起作用，很多项目都是这样
