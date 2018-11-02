@@ -11,7 +11,12 @@
         缺少openssl文件关联，  https://blog.csdn.net/qq_30507287/article/details/69389982（解决办法）
          the "ssl" parameter requires ngx_http_ssl_module in /usr/local/nginx/conf/nginx.conf:35    解决办法  https://www.cnblogs.com/ghjbk/p/6744131.html
        (https://www.cnblogs.com/123cn/p/5752141.html)  成功
-    6. [h5 与原生 app 交互的原理](https://mp.weixin.qq.com/s/oMTqMqZHAP3OSeysb1Efcg)
+    6. 一次跨域  options请求[options请求](http://www.xudihui.com/?p=285)
+    7. [h5 与原生 app 交互的原理](https://mp.weixin.qq.com/s/oMTqMqZHAP3OSeysb1Efcg)
+        ```
+            同一个接口，在我这正常，在别人那404， 因为我这默认开启了浏览器跨域， 
+            在某些特定methods跨域时会先发送一个options请求， 会404.
+        ```
 ##### Nginx  相关
     1. nginx -t  检测配置文件语法错误，同时会显示主配置文件路径
        .default 这是备份文件，不起作用，很多项目都是这样
