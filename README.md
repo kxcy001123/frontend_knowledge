@@ -8,11 +8,20 @@
     3. vue商城  https://github.com/willemwei/goods
     4. 阿里云部署node  https://help.aliyun.com/document_detail/50775.html
     5. 阿里云 nginx服务器   https://blog.csdn.net/chichengit/article/details/80807354（失败）
+        缺少openssl文件关联，  https://blog.csdn.net/qq_30507287/article/details/69389982（解决办法）
+         the "ssl" parameter requires ngx_http_ssl_module in /usr/local/nginx/conf/nginx.conf:35    解决办法  https://www.cnblogs.com/ghjbk/p/6744131.html
        (https://www.cnblogs.com/123cn/p/5752141.html)  成功
+    6. [h5 与原生 app 交互的原理](https://mp.weixin.qq.com/s/oMTqMqZHAP3OSeysb1Efcg)
 ##### Nginx  相关
     1. nginx -t  检测配置文件语法错误，同时会显示主配置文件路径
        .default 这是备份文件，不起作用，很多项目都是这样
     2. nginx.conf  配置详细解释  (https://www.cnblogs.com/liang-wei/p/5849771.html)
+##### Liunx命令
+    ```
+        ldd 查看动态库依赖关系
+
+        ln 它的功能是为某一个文件或目录在另外一个位置建立一个同步的链接，类似Windows下的超级链接。
+    ```
 ##### 前端工程化
     1. [babel相关](https://www.cnblogs.com/lsgxeva/p/7758184.html)
 ##### 
