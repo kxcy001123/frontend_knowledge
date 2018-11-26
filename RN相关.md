@@ -32,6 +32,20 @@
    ```
 
 - 返回数据量大的请求使用fetch
+- KeyboardAvoidingView 
+    behavior
+    注意：Android 和 iOS 在此属性上表现并不一致。 Android 可能不指定此属性更好，而 iOS 可能相反。
+    解决：
+   ```
+     if(Platform.OS==='ios'){
+        behavior ={
+          behavior:'padding'
+        };
+        SearchBarProps={
+          value:''
+        } 
+      }  //然后将behavior值解构到KeyboardAvoidingView组件上
+   ```
 - SearchBar 
   ``` 
     if(Platform.OS==='ios'){

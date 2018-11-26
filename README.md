@@ -4,15 +4,16 @@
 工作学习中遇到的一些知识，问题，记录
  
     1. mobx 数组越界， js数组不存在越界，js的数组是hash表，如果找不到会返回undefined
-    2. csrf 跨站请求伪造，防御:http请求头 referer
-    3. vue商城  https://github.com/willemwei/goods
-    4. 阿里云部署node  https://help.aliyun.com/document_detail/50775.html
-    5. 阿里云 nginx服务器   https://blog.csdn.net/chichengit/article/details/80807354（失败）
+    2. mobx 使用action.bound  原因  在组件中解构后调用action方法  this指向发生变化， 通过action.bound可将this绑定到当前store中
+    3. csrf 跨站请求伪造，防御:http请求头 referer
+    4. vue商城  https://github.com/willemwei/goods
+    5. 阿里云部署node  https://help.aliyun.com/document_detail/50775.html
+    6. 阿里云 nginx服务器   https://blog.csdn.net/chichengit/article/details/80807354（失败）
         缺少openssl文件关联，  https://blog.csdn.net/qq_30507287/article/details/69389982（解决办法）
          the "ssl" parameter requires ngx_http_ssl_module in /usr/local/nginx/conf/nginx.conf:35    解决办法  https://www.cnblogs.com/ghjbk/p/6744131.html
        (https://www.cnblogs.com/123cn/p/5752141.html)  成功
-    6. 一次跨域  options请求[options请求](http://www.xudihui.com/?p=285)
-    7. [h5 与原生 app 交互的原理](https://mp.weixin.qq.com/s/oMTqMqZHAP3OSeysb1Efcg)
+    7. 一次跨域  options请求[options请求](http://www.xudihui.com/?p=285)
+    8. [h5 与原生 app 交互的原理](https://mp.weixin.qq.com/s/oMTqMqZHAP3OSeysb1Efcg)
         ```
             同一个接口，在我这正常，在别人那404， 因为我这默认开启了浏览器跨域， 
             在某些特定methods跨域时会先发送一个options请求， 会404.
