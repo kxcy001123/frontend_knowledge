@@ -17,7 +17,7 @@
                     clear={true}
                     type="number"
                     ref="textInput1"
-
+            />
     ```
 5. 开启原生动画  
    ```
@@ -91,3 +91,4 @@ StyleSheet.createPlatformStyle({
 - 在android中scrollview 使用 snapToInterval属性必须添加pagingEnabled
 
 - 在jsx中是否显示组件 不要使用 ```aa&&(component) ```，应该使用```!!aa&&(component)```
+- Text超出显示...   设置numberLines={1}
