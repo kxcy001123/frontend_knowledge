@@ -92,3 +92,27 @@ StyleSheet.createPlatformStyle({
 
 - 在jsx中是否显示组件 不要使用 ```aa&&(component) ```，应该使用```!!aa&&(component)```
 - Text超出显示...   设置numberLines={1}
+
+
+
+- mobx 更新时 若render函数中没有直接用到 mobx中更新的数据  则视图不会更新 
+``` 
+  render(){
+    return (
+      <TabView
+        navigationState={this.state}
+        ref={ref=>this.tabView = ref}
+        tabBarPosition={"top"}
+        renderScene={this._renderScene}   // 虽然renderScene中有用到  但是也不行， 
+        renderTabBar={this._renderTabBar}
+        renderPager={this._renderPager}
+        onIndexChange={index => this.onIndexChanged(index)}
+        initialLayout={{ width: Dimensions.get('window').width, height: 64 }}
+        useNativeDriver
+      />
+    )
+
+  }
+
+
+```

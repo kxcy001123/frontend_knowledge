@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js"></script>
+  <script src="http://www.jq22.com/js/jquery.qrcode.min.js"></script>
+  <script src="http://www.jq22.com/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://www.jq22.com/demo/dayin/jquery.jqprint-0.3.js"></script>
+</head>
+
+<body>
+    <div class="qrcBody" id="qrcBody">
+      </div>
+  <div class="qrcBody" id="qrcBodyImg" style="display:none">
+    <img class="qrcImg" src="">
+    <img class="align-center-middle upLogo" src="">
+  </div>
+  <button id="btnPrint" type="button" class="btn btn-primary pull-right" style="margin-left :30px">Print QRC
+  </button>
+</body>
+<script>
+
+  jQuery('#qrcBody').qrcode({
+       width: 250,
+       height: 250,
+       text: "good good study, day day up! "//二维码的内容
+   })
+  var qrcSrc = $("canvas")[0].toDataURL();//二维码canvas转img
+  var upLogSrc = "img/kaoshen.jpg";//二维码中间的logo
+    $("#qrcBodyImg .qrcImg").attr("src", qrcSrc);
+    $("#qrcBodyImg .upLogo").attr("src", upLogSrc);
+    $("#qrcBody").hide();//隐藏canvas部分
+    $("#qrcBodyImg").show();//显示img部分
+
+
+  //打印部分
+  $("#btnPrint").click(function () {
+    $("#qrcBodyImg").jqprint({
+
+    })
+  })
+</script>
+
+</html>
